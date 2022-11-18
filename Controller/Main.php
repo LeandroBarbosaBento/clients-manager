@@ -212,25 +212,4 @@ class Main
 
     }
 
-    public function delete($data)
-    {
-        unset($data[0]);
-
-        $db = new DB();
-        $conn = $db->connect();
-
-       $query = "DELETE FROM products WHERE sku = ?";
-
-       foreach($data as $sku){
-
-            $stmt = $conn->prepare($query);
-            $stmt->execute([$sku]);
-    
-        }
-
-        // Redirect to the Produc List page
-        echo '<script type="text/javascript">
-                window.location = "index.php"
-                </script>';
-    }
 }
