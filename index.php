@@ -130,7 +130,7 @@
                                                     <th>Bairro</th>
                                                     <th>Cidade</th>
                                                     <th>Estado</th>
-                                                    <th>Phone</th>
+                                                    <th>Telefone</th>
                                                     <th>E-mail</th>
                                                     <th>Ativo</th>
                                                     <th></th>
@@ -145,7 +145,7 @@
                                                     <th>Bairro</th>
                                                     <th>Cidade</th>
                                                     <th>Estado</th>
-                                                    <th>Phone</th>
+                                                    <th>Telefone</th>
                                                     <th>E-mail</th>
                                                     <th>Ativo</th>
                                                     <th></th>
