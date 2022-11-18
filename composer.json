@@ -1,0 +1,17 @@
+{
+    "name": "task/p21",
+    "description": "Desafio P21",
+    "authors": [
+        {
+            "name": "Leandro Barbosa Bento",
+            "email": "leandro-bento@outlook.com"
+        }
+    ] ,
+    "require":{},
+    "autoload": {
+        "psr-4": {
+            "Model\\": "Model/",
+            "Controller\\": "Controller/"
+        }
+    }
+}
