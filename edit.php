@@ -162,7 +162,6 @@ $client = $controller->getDataFromClient($id);
                                             <div class="mb-3 col">
                                                 <label class="form-label">Email: </label>
                                                 <input 
-                                                    required 
                                                     type="email" 
                                                     class="form-control" 
                                                     name="email"
@@ -172,7 +171,6 @@ $client = $controller->getDataFromClient($id);
                                             <div class="mb-3 col">
                                                 <label class="form-label">Telefone: </label>
                                                 <input 
-                                                    required 
                                                     type="text" 
                                                     class="form-control" 
                                                     name="phone"
