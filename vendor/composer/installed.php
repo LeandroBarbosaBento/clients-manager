@@ -1,24 +1,23 @@
-<?php return array (
-  'root' => 
-  array (
-    'pretty_version' => '1.0.0+no-version-set',
-    'version' => '1.0.0.0',
-    'aliases' => 
-    array (
+<?php return array(
+    'root' => array(
+        'pretty_version' => 'dev-master',
+        'version' => 'dev-master',
+        'type' => 'library',
+        'install_path' => __DIR__ . '/../../',
+        'aliases' => array(),
+        'reference' => '72803d9d260635e4385fceec12a91d689f155fe6',
+        'name' => 'task/p21',
+        'dev' => true,
     ),
-    'reference' => NULL,
-    'name' => 'task/scandiweb',
-  ),
-  'versions' => 
-  array (
-    'task/scandiweb' => 
-    array (
-      'pretty_version' => '1.0.0+no-version-set',
-      'version' => '1.0.0.0',
-      'aliases' => 
-      array (
-      ),
-      'reference' => NULL,
+    'versions' => array(
+        'task/p21' => array(
+            'pretty_version' => 'dev-master',
+            'version' => 'dev-master',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../../',
+            'aliases' => array(),
+            'reference' => '72803d9d260635e4385fceec12a91d689f155fe6',
+            'dev_requirement' => false,
+        ),
     ),
-  ),
 );
