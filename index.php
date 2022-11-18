@@ -54,7 +54,7 @@
                         <h1 class="h3 mb-0 text-gray-800">Lista de clientes</h1>
 
                         <div>
-                            <a href="load-clients.php" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
+                            <a href="add.php" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
                                 <i class="fa fa-plus"></i> Adicionar novo cliente
                             </a>
                             <a href="load-clients.php" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">

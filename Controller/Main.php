@@ -129,6 +129,45 @@ class Main
         return false;
     }
 
+    public function addClient($data)
+    {
+        $db = new DB();
+        $conn = $db->connect();
+
+        $query = "INSERT INTO clients
+            SET
+                name=:name,
+                document=:document,
+                zipcode=:zipcode,
+                address=:address,
+                district=:district,
+                city=:city,
+                state=:state,
+                phone=:phone,
+                email=:email,
+                active=:active";
+
+        $stmt = $conn->prepare($query);
+
+        $stmt->bindParam(":name", htmlspecialchars(strip_tags($data['name'])));
+        $stmt->bindParam(":document", htmlspecialchars(strip_tags($data['document'])));
+        $stmt->bindParam(":zipcode", htmlspecialchars(strip_tags($data['zipcode'])));
+        $stmt->bindParam(":address", htmlspecialchars(strip_tags($data['address'])));
+        $stmt->bindParam(":district", htmlspecialchars(strip_tags($data['district'])));
+        $stmt->bindParam(":city", htmlspecialchars(strip_tags($data['city'])));
+        $stmt->bindParam(":state", htmlspecialchars(strip_tags($data['state'])));
+        $stmt->bindParam(":phone", htmlspecialchars(strip_tags($data['phone'])));
+        $stmt->bindParam(":email", htmlspecialchars(strip_tags($data['email'])));
+        $stmt->bindParam(":active", htmlspecialchars(strip_tags($data['active'])));
+        $stmt->execute();
+
+        if($stmt->execute()){
+            return true;
+        }
+
+        return false;
+    }
+
     public function loadDataFromXML($clients)
     {
         $db = new DB();
