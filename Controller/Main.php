@@ -159,7 +159,6 @@ class Main
         $stmt->bindParam(":phone", htmlspecialchars(strip_tags($data['phone'])));
         $stmt->bindParam(":email", htmlspecialchars(strip_tags($data['email'])));
         $stmt->bindParam(":active", htmlspecialchars(strip_tags($data['active'])));
-        $stmt->execute();
 
         if($stmt->execute()){
             return true;
