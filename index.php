@@ -60,6 +60,9 @@
                             <a href="load-clients.php" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
                                 <i class="fa fa-upload"></i> Carregar novos clientes a partir de arquivo
                             </a>
+                            <a href="send-email.php" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
+                                <i class="fa fa-pen"></i> Enviar email
+                            </a>
                         </div>
 
                         

@@ -42,6 +42,42 @@ class Main
         
     }
 
+    public function getActiveClients()
+    {
+        $db = new DB();
+        $conn = $db->connect();
+
+        $query = "SELECT * FROM clients WHERE active = 1";
+        $stmt = $conn->prepare($query);
+        $stmt->execute();
+
+        $clients = [];
+
+        while ($row = $stmt->fetch(\PDO::FETCH_ASSOC)){
+
+            extract($row);
+    
+            $client = [
+                "id"            => $id,
+                "name"          => html_entity_decode($name),
+                "document"      => html_entity_decode($document),
+                "zipcode"       => html_entity_decode($zipcode),
+                "address"       => html_entity_decode($address),
+                "district"      => html_entity_decode($district),
+                "city"          => html_entity_decode($city),
+                "state"         => html_entity_decode($state),
+                "phone"         => html_entity_decode($phone),
+                "email"         => html_entity_decode($email),
+                "active"        => $active,
+            ];
+
+            array_push($clients, $client);
+        }
+
+        return $clients;
+        
+    }
+
     public function getTotalActiveClients()
     {
         $db = new DB();
